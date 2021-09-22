@@ -1,7 +1,7 @@
 .front
     .content
         flex-flow: column wrap
-        align-items: left
+        align-items: center
         justify-content: center
         +min(2)
             margin-top: 20px
@@ -9,10 +9,11 @@
             font-size: 5rem
             font-weight: 600
             letter-spacing: -3px
-            align-items: flex-start
+            align-items: center
             +min(1)
                 font-size: 5.5rem
                 letter-spacing: -5px
+                
             +min(2)
                 font-size: 5.2rem
                 letter-spacing: -5px
@@ -57,28 +58,45 @@
                     +min(2)
                         font-size: 1.4rem
                     +min(3)
-                        font-size: 1.4rem   
+                        font-size: 1.4rem  
+            div
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: center
+                h5
+                    width: 100%
+                    font-size: 1.2rem
+                    text-align: center
+                    margin: rem(15px) 0 rem(30px)
+                    color: scheme.heading
+                    line-height: 3
+                    +min(1)
+                        font-size: 1.4rem
+                       margin: 0 0 rem(80px)
+                    +min(2)
+                        font-size: 1.4rem
+                    +min(3)
+                        font-size: 1.4rem                
             div
                 display: flex
                 flex-flow: row wrap
                 justify-content: center
                 width: 100%
                 +min(1)
-                    width: auto
                 a
                     button(large, color: mediumseagreen)
-                    margin: rem(8px) 0
-                    min-width: 60%
+                    margin: rem(8px) 10px
+                   
                     +min(1)
-                        min-width: auto
                         font-size: 1.2rem
-                        margin: 0
                         padding: rem(16px) rem(35px)
-                        &:first-of-type
-                            margin-right: rem(14px)
+                        width: 50%
                     +min(2)
                         font-size: 1.25rem
                         padding: rem(17px) rem(36px)
+                        width: 25%
                     +min(3)
                         font-size: 1.32rem
                         padding: rem(18px) rem(38px)
+                        width: 20%
